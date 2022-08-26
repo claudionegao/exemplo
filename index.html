@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kenzie Blog</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <div id="errorMessage" class="message">Placeholder</div>
+    <main class="container">
+        <form class="container__register">
+            <h2>Cadastro</h2>
+            <input id="regUser" type="text" placeholder="Nome do usuário" required>
+            <input id="regEmail" type="email" placeholder="Email" required>
+            <input id="regPic" type="text" placeholder="Foto de Perfil" required>
+            <input id="regPass" type="password" placeholder="Senha" required>
+            <button id="regButton" type="submit">Cadastrar</button>
+        </form>
+        <form class="container__login">
+            <h2>login</h2>
+            <input id="email" type="email" placeholder="Email" required> 
+            <input id="password" type="password" placeholder="Senha" required>
+            <button id="loginSubmit" type="submit">Entrar</button>
+        </form>
+    </main>
+    <script type="module" src="./src/scripts/login.js"></script>
+</body>
+</html>

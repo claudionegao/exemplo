@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav__container">
+            <figure class="image__container">
+                <img src="" id="profile" alt="Foto do Usuário" title="Foto do Usuário">
+                <figcaption>Nome de Usuário</figcaption>
+            </figure>
+            <button id="logOut">Logout</button>
+        </nav>
+    </header>
+
+    <main class="main__container">
+        <form >
+            <textarea type="text" id="post" placeholder="No que esta pensando?" cols="10" rows="2" ></textarea>
+            <button class="post__btn" id="postBtn">Postar</button>
+            <button class="post__btn__plus" id="postBtn">+</button>
+        </form>
+
+        <ul class="list">
+            <li class="list__card">
+                <img 
+                src="https://www.petz.com.br/blog/wp-content/uploads/2020/04/meu-primeiro-gato.jpg" alt="Foto do Usuário" title="Foto do Usuário">
+                <div class="card__content">
+                    <h2>User Name</h2>
+                    <p>Lorem ipsum dolor sit amet. Et iste labore ut similique consequuntur et consequuntur harum est repellendus quia 33 tempore similique. Nam reprehenderit vero eos maxime consequatur At nihil facere vel quam nemo eum perspiciatis maiores qui atque quia. 
+                    </p>
+                </div class="card__content">
+                <div class="box__btns">
+                    <span>22/08/2022</span>
+                    <div>
+                        <button
+                        id="editPost" class="card__buttons"><img src="../assets/edit 1.svg" alt=""></button>
+                        <button id="delPost" class="card__buttons"><img src="../assets/trash-bin 1.svg" alt=""></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <section class="modal__edit modal__edit--active">
+            <form class="modal__edit__form">
+                <label for="edit">Editar</label>
+                <textarea id="postEdit" name="edit" type="text" placeholder="Estou mudando meu comentario" rows="5" ></textarea>
+                <button id="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="modal__delete modal__delete--active">
+            <div class="mensage">
+                <p>Deseja Deletaresse post?</p>
+                <button id="delete">Deletar</button>
+            </div>
+        </section>
+        <script type="module" src="../scripts/render.js"></script>
+    </main>
+</body>
+</html>
