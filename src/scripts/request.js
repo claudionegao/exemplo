@@ -18,7 +18,7 @@ export class Request {
             if(resp.token != undefined){
                 localStorage.setItem('@kenzieBlog: token', resp.token)
                 localStorage.setItem('@kenzieBlog: id', resp.userId)
-                window.location.assign('/src/pages/dashboard.html')
+                window.location.assign('exemplo/src/pages/dashboard.html')
             }
             return resp
         })
